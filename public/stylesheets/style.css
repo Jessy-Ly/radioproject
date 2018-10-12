@@ -12,3 +12,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+h1 {
+  font-size: 72px;
+   background: -webkit-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+   background: -o-linear-gradient(right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+   background: -moz-linear-gradient(right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+   background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
