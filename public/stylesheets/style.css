@@ -14,6 +14,7 @@ a {
 }
 
 h1 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 72px;
    background: -webkit-linear-gradient(left, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
    background: -o-linear-gradient(right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
@@ -21,4 +22,9 @@ h1 {
    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.main-label {
+    font-family: 'Permanent Marker', cursive;
+    margin-right: 15px;
 }

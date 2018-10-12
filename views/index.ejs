@@ -3,6 +3,7 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
@@ -11,26 +12,18 @@
   <div class="row justify-content-center">
     <div class="">
       <h1><%= title %></h1>
-      <p>Welcome to <%= title %></p>
     </div>
   </div>
 </div>
 
-//-----Selector-----/
 <div class="block form-group">
-<label for="select">Select</label>
+<label for="select" class="main-label">Select your playlist :</label>
 <select id="select">
-  <option selected>Google Docs</option>
-  <option>Google Forms</option>
-  <option>Google Sheets</option>
-</select>
-</div>
-<div class="block form-group">
-<label for="disabled-select">Disabled select</label>
-<select id="disabled-select" disabled>
-  <option selected>Google Docs</option>
-  <option>Google Forms</option>
-  <option>Google Sheets</option>
+  <option selected>Choose...</option>
+  <option>Hip-Hop/R&B/Trap</option>
+  <option>House/Electro</option>
+  <option>Rock</option>
+  <option>Jazz</option>
 </select>
 </div>
 
