@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Radioproject</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/style.css' />
@@ -9,29 +10,45 @@
   <body>
 
 <div class="container">
+
+  <div class="row">
+    <form class="">
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
   <div class="row justify-content-center">
     <div class="">
-      <h1><%= title %></h1>
+      <h1>Radioproject</h1>
     </div>
   </div>
+
+  <div class="block form-group row">
+  <label for="select" class="main-label">Select your playlist :</label>
+  <select id="select">
+    <option selected>Choose...</option>
+    <option>Hip-Hop/R&B/Trap</option>
+    <option>House/Electro</option>
+    <option>Rock</option>
+    <option>Jazz</option>
+  </select>
+  </div>
+
+  <div class="row justify-content-center ">
+  <%- include('player')-%>
+</div>
+
 </div>
 
 
 
-<div class="block form-group row">
-<label for="select" class="main-label">Select your playlist :</label>
-<select id="select">
-  <option selected>Choose...</option>
-  <option>Hip-Hop/R&B/Trap</option>
-  <option>House/Electro</option>
-  <option>Rock</option>
-  <option>Jazz</option>
-</select>
-</div>
 
-<div class="row justify-content-center align-items-center">
-<%- include('player')-%>
-</div>
 
 
 
